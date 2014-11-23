@@ -1,5 +1,11 @@
+GIT
+  remote: git://github.com/mindreframer/api_view.git
+  revision: 4997b03756ac5f42ec7ed185ea2b270094db53f9
+  specs:
+    api_view (0.0.1)
+
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     active_model_serializers (0.8.1)
       activemodel (>= 3.0)
@@ -12,13 +18,21 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    allocation_stats (0.1.5)
+    bixby-bench (0.1.0)
+      allocation_stats
     builder (3.2.2)
     i18n (0.6.9)
     json (1.8.1)
     minitest (5.3.4)
+    multi_json (1.10.1)
     oj (2.9.3)
     rabl (0.9.3)
       activesupport (>= 2.3.14)
+    require_pattern (1.0)
+      term-colorizer
+    ruby-prof (0.15.1)
+    term-colorizer (0.2.1)
     thread_safe (0.3.3)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
@@ -28,5 +42,10 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  api_view!
+  bixby-bench
+  multi_json
   oj
   rabl
+  require_pattern
+  ruby-prof
